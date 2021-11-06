@@ -1,0 +1,4 @@
+---
+- name: Upgrade alembic
+  shell:
+    cmd: docker exec -u root -e PYTHONPATH=. {{application_name}} pipenv run alembic upgrade head
