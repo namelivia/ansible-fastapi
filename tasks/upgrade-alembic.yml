@@ -1,4 +1,9 @@
 ---
+- name: 'Check mandatory variables are defined'
+  assert:
+    that:
+      - application_name is defined
+
 - name: Upgrade alembic
   shell:
     cmd: docker exec -u root -e PYTHONPATH=. {{application_name}} pipenv run alembic upgrade head
