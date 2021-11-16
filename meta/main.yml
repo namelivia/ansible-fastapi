@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: namelivia.fastapi
+  role_name: fastapi
   author: José Ignacio Amelivia Santiago <jignacio.amelivia@gmail.com>
   description: This Ansible role contains some tasks needed to deploy FastAPI applications.
   license: GPLv2
