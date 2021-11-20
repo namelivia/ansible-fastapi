@@ -1,4 +1,4 @@
-# FastAPI Ansible role
+# FastAPI Ansible role [![Ansible Lint](https://github.com/namelivia/ansible-fastapi/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/namelivia/ansible-fastapi/actions/workflows/ansible-lint.yml)
 
 This Ansible role contains some common tasks I use to deploy containerized FastAPI applications.
 
