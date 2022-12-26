@@ -5,5 +5,6 @@
       - application_name is defined
 
 - name: Upgrade alembic
-  shell:
-    cmd: docker exec -u root -e PYTHONPATH=. {{ application_name }} pipenv run alembic upgrade head
+  command: docker exec -u root -e PYTHONPATH=. {{ application_name }} pipenv run alembic upgrade head
+  register: command_output
+  changed_when: command_output.rc != 0
